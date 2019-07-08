@@ -1,6 +1,8 @@
----
-title: "Geotek Multi-Sensor Core Logger"
----
+# Geotek MSCL
+
+<!-- --- -->
+<!-- title: "Geotek Multi-Sensor Core Logger" -->
+<!-- --- -->
 
 The Geotek MSCL situated at ORCA is an instrument for gathering data in an automated and quality-controlled way. The parameters that can be measured are
 
@@ -11,7 +13,7 @@ The Geotek MSCL situated at ORCA is an instrument for gathering data in an autom
 * Colour linescan imaging including RGB data at sub-millimeter resolution
 * Colour spectrophotometry  
 
- <!-- ![](Images\geotek.jpg){ width=50%}   -->
+ ![](Images/Geotek/mscl.jpg){ width=50%}
 
 $~$
 
@@ -25,3 +27,4 @@ Measurements are typically made at a 5mm Resolution with the exception of the lo
 
 The MSCL is able to analyse either whole or split core between 50 and 150mm in diameter, cut into sections up to 1.5 m long.
 
+ ![](Images/Geotek/geotek.png){ width=50%}
