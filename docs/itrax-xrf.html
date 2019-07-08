@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 iTrax XRF | A Minimal Book Example</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 iTrax XRF | A Minimal Book Example" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 iTrax XRF | A Minimal Book Example" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Yihui Xie" />
+
+
+<meta name="date" content="2019-07-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="geotek-mscl.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="geotek-mscl.html"><a href="geotek-mscl.html"><i class="fa fa-check"></i><b>2</b> Geotek MSCL</a></li>
+<li class="chapter" data-level="3" data-path="itrax-xrf.html"><a href="itrax-xrf.html"><i class="fa fa-check"></i><b>3</b> iTrax XRF</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="itrax-xrf" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> iTrax XRF</h1>
+<p>The Cox Analytical Systems iTrax XRF Corescanner can be used to obtain high resolution geochemical and image data from split drill cores, wet sediments and discrete samples. The itrax has the ability to measure core diameters between 60 and 120mm at resolutions that can range between a minimum of 0.1 mm and a maximum of 10 mm.</p>
+<p>The iTrax has the ability to</p>
+<ul>
+<li>measure multiple elements between Al and U in a single run, generally down to ppm levels for most metals.</li>
+<li>take X-Ray images that can show variations in the core due to density or chemical variations. These variations may be invisable to the naked eye</li>
+<li>take digital rgb images using a high resolution line scan camera</li>
+</ul>
+<p>The core facility currently has two xrf tubes. A 2200 W Chromium tube and a 3000W Molybdenum</p>
+<p><a href="https://form.jotform.co/90431411365852" class="uri">https://form.jotform.co/90431411365852</a></p>
+<p>&lt;iframe src=&quot;<a href="https://form.jotform.co/90431411365852%22/" class="uri">https://form.jotform.co/90431411365852&quot;/</a>, height=1500, width=500
+,scrolling =yes&gt;</p>
+<!-- ```{r echo=FALSE} -->
+<!-- library(shiny) -->
+<!-- # Define UI for application that draws a histogram -->
+<!-- ui <- fluidPage( -->
+<!-- #removes spin wheels from numeric input boxes   -->
+<!--   tags$style(HTML(" -->
+<!--         input[type=number] { -->
+<!--                   -moz-appearance:textfield; -->
+<!--                   } -->
+<!--                   input[type=number]::{ -->
+<!--                   -moz-appearance:textfield; -->
+<!--                   } -->
+<!--                   input[type=number]::-webkit-outer-spin-button, -->
+<!--                   input[type=number]::-webkit-inner-spin-button { -->
+<!--                   -webkit-appearance: none; -->
+<!--                   margin: 0; -->
+<!--                   } -->
+<!--                   ")), -->
+<!--    # Application title -->
+<!--    titlePanel(("Calculate Approximate iTrax Run Time") -->
+<!--               ), -->
+<!--   tags$br(), -->
+<!--    splitLayout( -->
+<!--      numericInput(inputId = "niRes", "Scan Resolution (mm)",value=0, width = "30%"), -->
+<!--    numericInput(inputId = "niLength","Core Length (meters)",value=0, width = "30%"), -->
+<!--    numericInput(inputId = "niXray", "X-Ray exposure time (Seconds)",value=0,width = "30%"), -->
+<!--    numericInput(inputId = "niXRF", "XRF exposure time (Seconds)",value=0,width = "30%") -->
+<!--    ), -->
+<!--   fluidPage(             -->
+<!--     h4("The approximate time in hours it will take to process your core is: "), -->
+<!--             tags$br(), -->
+<!--     h5(textOutput(outputId = "time")) -->
+<!--     ) -->
+<!-- ) -->
+<!-- # Define server logic required to draw a histogram -->
+<!-- server <- function(input, output) { -->
+<!--   totalmeas<-reactive({(input$niLength*1000)/input$niRes}) -->
+<!--  totalTime<-reactive({((totalmeas()*input$niXray)+(totalmeas()*0.2))+((totalmeas()*input$niXRF)+(totalmeas()*0.2))}) -->
+<!--   output$time<-renderText({totalTime()/3600}) -->
+<!-- } -->
+<!-- # Run the application  -->
+<!-- shinyApp(ui = ui, server = server) -->
+<!-- ``` -->
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="geotek-mscl.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
